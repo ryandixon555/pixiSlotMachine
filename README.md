@@ -1,6 +1,8 @@
 "# pixiSlotMachine" 
- 
- Setup
+
+A basic slot machine that spins, with no winning functionality
+
+Setup
 1. Install node.js and npm
 
 2. Clone this repo

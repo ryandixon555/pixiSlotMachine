@@ -7,7 +7,7 @@
         "dev": "webpack-dev-server -d --inline --hot --progress --no-info --port 9000 --host 0.0.0.0",
         "build": "webpack -p"
     },
-    "author": "Maicon Feldhaus (maicon.feldhaus@gmail.com)",
+    "author": "Ryan Dxon",
     "license": "MIT",
     "devDependencies": {
         "pixi.js": "^4.5.6",

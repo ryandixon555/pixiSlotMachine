@@ -1,5 +1,4 @@
 import * as PIXI from "pixi.js";
-// http://ezelia.com/2013/pixi-tutorial
 
 export abstract class Scene extends PIXI.Container {
 

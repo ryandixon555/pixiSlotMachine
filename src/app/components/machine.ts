@@ -79,9 +79,6 @@ export class Machine extends PIXI.Container {
             }
             const first: number = this.reels[0].tiles[line[0]].id;
             const value: number = data.symbols[first].paytable[sum];
-            if (value > 0) {
-                // TODO: player won something
-            }
         }
     }
 }

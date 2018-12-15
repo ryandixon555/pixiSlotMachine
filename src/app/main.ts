@@ -1,7 +1,6 @@
 import * as PIXI from "pixi.js";
 import { Scene } from "./engine/scene";
 import { GameScene } from "./scenes/game";
-import { IntroScene } from "./scenes/intro";
 
 export class Main extends PIXI.Application {
 
@@ -14,9 +13,6 @@ export class Main extends PIXI.Application {
         document.body.appendChild(this.view);
 
         this.scenes = [];
-
-        // const intro: IntroScene = new IntroScene(this.renderer);
-        // this.addScene(intro);
 
         const game: GameScene = new GameScene(this.renderer);
         this.ticker.add(game.update.bind(game));

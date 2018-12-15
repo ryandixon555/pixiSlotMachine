@@ -12,9 +12,9 @@ export class GameScene extends Scene {
         align: "center",
     });
 
-    private readonly NUMBER_FORMAT: Intl.NumberFormat = new Intl.NumberFormat("de-DE", {
+    private readonly NUMBER_FORMAT: Intl.NumberFormat = new Intl.NumberFormat("gb-GB", {
         style: "currency",
-        currency: "EUR",
+        currency: "GBP",
     });
 
     private machine: Machine;
@@ -74,19 +74,19 @@ export class GameScene extends Scene {
     }
 
     protected preload(): void {
-        // PIXI.loader.add("assets/images/icon_1.png");
-        // PIXI.loader.add("assets/images/icon_2.png");
-        // PIXI.loader.add("assets/images/icon_3.png");
-        // PIXI.loader.add("assets/images/icon_4.png");
-        // PIXI.loader.add("assets/images/icon_5.png");
-        // PIXI.loader.add("assets/images/icon_6.png");
-        // PIXI.loader.add("assets/images/icon_7.png");
-        // PIXI.loader.add("assets/images/icon_8.png");
-        // PIXI.loader.add("assets/template.png");
+        PIXI.loader.add("assets/images/icon_1.png");
+        PIXI.loader.add("assets/images/icon_2.png");
+        PIXI.loader.add("assets/images/icon_3.png");
+        PIXI.loader.add("assets/images/icon_4.png");
+        PIXI.loader.add("assets/images/icon_5.png");
+        PIXI.loader.add("assets/images/icon_6.png");
+        PIXI.loader.add("assets/images/icon_7.png");
+        PIXI.loader.add("assets/images/icon_8.png");
+        PIXI.loader.add("assets/template.jpg");
     }
 
     protected create(): void {
-        const template: PIXI.Sprite = PIXI.Sprite.fromImage("assets/template.png");
+        const template: PIXI.Sprite = PIXI.Sprite.fromImage("assets/template.jpg");
         template.width = Scene.width;
         template.height = Scene.height;
         template.alpha = 0.2;
